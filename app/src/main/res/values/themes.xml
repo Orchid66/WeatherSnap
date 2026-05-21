@@ -1,3 +1,3 @@
 <resources>
-    <style name="Theme.WeatherSnap" parent="android:Theme.Material.NoTitleBar" />
+    <style name="Theme.WeatherSnap" parent="Theme.Material3.DayNight.NoActionBar" />
 </resources>
