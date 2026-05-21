@@ -18,6 +18,7 @@ import com.weathersnap.domain.model.City
 import com.weathersnap.domain.model.Weather
 import kotlin.math.roundToInt
 
+
 @Composable
 fun WeatherScreen(
     viewModel: WeatherViewModel = hiltViewModel(),
@@ -289,6 +290,7 @@ fun WeatherCard(weather: Weather, onCreateReport: () -> Unit) {
     }
 }
 
+
 @Composable
 fun WeatherMetric(label: String, value: String) {
     Column(horizontalAlignment = Alignment.Start) {
@@ -306,3 +308,4 @@ fun WeatherMetric(label: String, value: String) {
         )
     }
 }
+
