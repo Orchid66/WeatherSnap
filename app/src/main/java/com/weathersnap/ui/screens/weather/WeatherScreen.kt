@@ -81,13 +81,13 @@ fun WeatherScreen(
                 )
             },
             trailingIcon = {
-                if (state.isLoadingSuggestions) {
+                /*if (state.isLoadingSuggestions) {
                     CircularProgressIndicator(
                         modifier = Modifier.size(18.dp),
                         strokeWidth = 2.dp,
                         color = MaterialTheme.colorScheme.primary
                     )
-                }
+                }*/
             },
             colors = OutlinedTextFieldDefaults.colors(
                 focusedBorderColor = MaterialTheme.colorScheme.primary,
@@ -126,7 +126,7 @@ fun WeatherScreen(
                             viewModel.onCitySelected(city)
                         })
                         if (city != state.suggestions.last()) {
-                            HorizontalDivider(color = MaterialTheme.colorScheme.outline)
+                            Divider(color = MaterialTheme.colorScheme.outline)
                         }
                     }
                 }
@@ -158,7 +158,8 @@ fun WeatherScreen(
                 modifier = Modifier.fillMaxWidth().padding(32.dp),
                 contentAlignment = Alignment.Center
             ) {
-                CircularProgressIndicator(color = MaterialTheme.colorScheme.primary)
+                // CircularProgressIndicator(color = MaterialTheme.colorScheme.primary)
+                Text("Loading...")
             }
         }
 

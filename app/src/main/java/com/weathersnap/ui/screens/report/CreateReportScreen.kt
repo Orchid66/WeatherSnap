@@ -163,7 +163,7 @@ fun CreateReportScreen(
                 .background(MaterialTheme.colorScheme.surfaceVariant),
             contentAlignment = Alignment.Center
         ) {
-            AnimatedVisibility(
+            this@Column.AnimatedVisibility(
                 visible = state.imagePath != null,
                 enter = fadeIn() + scaleIn(),
                 exit = fadeOut()
@@ -175,7 +175,7 @@ fun CreateReportScreen(
                     contentScale = ContentScale.Crop
                 )
             }
-            AnimatedVisibility(
+            this@Column.AnimatedVisibility(
                 visible = state.imagePath == null,
                 exit = fadeOut()
             ) {
